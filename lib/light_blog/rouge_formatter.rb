@@ -7,7 +7,7 @@ module LightBlog
   # The pre tag should contain only text, not other span tags
   class RougeFormatter < Rouge::Formatter
     tag "my_formatter"
-    def initialize(formatter, _opts = {}) # rubocop:disable Lint/MissingSuper
+    def initialize(formatter, _opts = {})
       @formatter = formatter
     end
 

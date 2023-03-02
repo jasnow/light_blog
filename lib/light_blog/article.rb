@@ -68,7 +68,7 @@ module LightBlog
 
     INVALID_TAG_CHAR_REGEX = /[^0-9a-zA-Z\-_]/.freeze
     def filter_valid_tags(tags)
-      tags.find_all { |tag| tag !~ INVALID_TAG_CHAR_REGEX }
+      tags.find_all { |tag| tag !~ INVALID_TAG_CHAR_REGEX } # rubocop:disable Style/SelectByRegexp
     end
 
     def parse_date!(strdate)
